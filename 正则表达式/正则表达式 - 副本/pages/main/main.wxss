@@ -1,0 +1,6 @@
+/* pages/main/main.wxss */
+
+
+.buttonGD {
+  margin-top: 200px;
+}

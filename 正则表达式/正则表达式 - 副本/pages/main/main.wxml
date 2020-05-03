@@ -1,0 +1,16 @@
+<!--pages/main/main.wxml-->
+
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <input class="weui-input" bindinput="inputEdit1" value="{{text1}}"  auto-focus placeholder="待匹配文本"/>
+      <input class="weui-input" bindinput="inputEdit2" model:value="{{text2}}"  placeholder="正则表达式" />
+    </view>
+  </view>
+  <view class="buttonGD">
+    <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"disabled="{{disabled}}" bindtap="runMain"> 开始匹配 </button>
+  </view>
+  <view class="btn-area">
+    <view class="body-view">
+      <text>{{text3}}</text>
+    </view>
+  </view>
