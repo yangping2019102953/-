@@ -1,0 +1,5 @@
+<!--logs.wxml-->
+<input placeholder="在此处输入待匹配文本" bindinput="check1" value="{{text1}}"></input> 
+<input placeholder="在此处输入正则表达式" bindinput="check2" value="{{text2}}"></input> 
+<view bindinput="check3">匹配结果：{{result}}</view>
+
