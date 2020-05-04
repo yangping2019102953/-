@@ -1,0 +1,23 @@
+<!--公共的wxs工具-->
+<!--logs.wxml-->
+<!--logs.wxml-->
+ 
+<!-- <input  bindinput="check1" value="{{text1}}"  placeholder="在此处输入待匹配文本"></input>
+<input  bindinput="check2" value="{{text2}}" placeholder="在此处输入正则表达式"></input> -->
+ <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <input class="weui-input" bindinput="check1" value="{{match_str}}"  auto-focus placeholder="待匹配文本"/>
+      <input class="weui-input" bindinput="check2" model:value="{{regexp}}"  placeholder="正则表达式" />
+    </view>
+  </view>
+ 
+
+
+<button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"disabled="{{disabled}}" bindtap="primary1"> 匹配 </button>
+
+<view class="btn-area">
+  <view class="body-view" style="color:red">
+    <text>{{text3}}</text>
+  </view>
+  </view>
+
