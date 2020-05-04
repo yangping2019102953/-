@@ -1,0 +1,20 @@
+<!--logs.wxml-->
+ 
+<input  bindinput="check1" value="{{text1}}"  placeholder="在此处输入待匹配文本"></input>
+<input  bindinput="check2" value="{{text2}}" placeholder="在此处输入正则表达式"></input>
+ 
+
+
+<button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"disabled="{{disabled}}" bindtap="primary1"> 按钮1 </button>
+<button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"disabled="{{disabled}}" bindtap="primary2"> 按钮2 </button>
+<view class="btn-area">
+  <view class="body-view">
+    <text>{{text3}}</text>
+  </view>
+  </view>
+<view class="btn-area">
+  <view class="body-view">
+    <text>{{text4}}</text>
+  </view>
+</view>
+
