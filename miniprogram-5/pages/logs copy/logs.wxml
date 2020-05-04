@@ -1,0 +1,12 @@
+<view class="section">
+    <view class="view-search">
+        <input class="view-search-input" value="{{keyName}}" placeholder="输入搜索关键词" bindinput="bindInput" maxlength="11" />
+    </view>
+    <scroll-view class="scrollView" scroll-y>
+        <view wx:for="{{searchDataList}}" wx:key="*this">
+            <view class='oneText'>
+                <text wx:for="{{item.text}}" wx:key="{{index}}" class="{{item == keyName ? 'searchHigh' : '' }}">{{item}}</text>
+            </view>
+        </view>
+    </scroll-view>
+</view>
