@@ -1,0 +1,18 @@
+<view class='list-msg'>
+    <view class='list-msg1'>
+        <text>常用正则表达式</text>
+       
+    </view>
+<!--下拉框  -->
+    <view class='list-msg2' bindtap='bindShowMsg'>
+        <text>{{tihuoWay}}</text>
+        <image style='height:20rpx;width:20rpx;' src='/images/down.png'></image>
+    </view>
+    
+<!-- 下拉需要显示的列表 -->
+    <view class="select_box" wx:if="{{select}}">
+        <view class="select_one" bindtap="mySelect" data-name="02">2.汉字：[\u4e00]+</view>
+        <view class="select_one" bindtap="mySelect" data-name="03">3.英文：[A-Za-z]+</view>
+       
+    </view>
+</view>
